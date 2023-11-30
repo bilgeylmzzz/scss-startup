@@ -1,0 +1,23 @@
+@import 'mixin__card';
+nav{
+    @include card_mixin_v2(#f1c40f);
+    padding: $padding-10;
+    width: 100%;
+    float: left; box-sizing: border-box;
+    ul{
+        list-style: none;
+        width: 100%;
+        float: left;
+        li{
+            float: left;
+            margin-right: 20px;
+            a{
+                color: $bg-color;
+                text-decoration: none;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

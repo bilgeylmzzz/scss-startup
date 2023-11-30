@@ -1,0 +1,7 @@
+$heading-size: 40 36 32 30 28 26;
+
+@for $index from 1 through length($heading-size) {
+    h#{$index} {
+        font-size: nth($heading-size, $index)px;
+    }
+}
